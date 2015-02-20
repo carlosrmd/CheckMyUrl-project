@@ -6,5 +6,4 @@ def index(request):
     # View code here...
     t = loader.get_template('index.html')
     c = Context({'foo': 'bar'})
-    return HttpResponse(t.render(c),
-        content_type="application/xhtml+xml")
+    return HttpResponse(t.render(c))
