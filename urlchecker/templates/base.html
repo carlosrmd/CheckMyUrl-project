@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/static/icon/favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>CheckMyUrl</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
@@ -58,7 +58,8 @@
     <div class="jumbotron">
       <div class="container">
         {% block contenido%} {% endblock %}
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        <input type="url" name="fname" size="46" placeholder="Enter your url here..."><br><br>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Check! &raquo;</a></p>
       </div>
     </div>
 
