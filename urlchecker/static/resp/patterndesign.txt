@@ -1,0 +1,9 @@
+El patrón de diseño utilizado por el framework Django es el patrón MTV (no confundir con el canal de televisión) en donde cada letra significa lo siguiente:
+
+ M, Viene de Model, refiriéndose al modelaje de datos (en una base de datos). Esto contiene la información sobre los datos (metadatos), la forma de acceder a los datos, la validación de estos datos, el comportamiento y relación de estos datos y cómo almacenarlos.
+
+ T, Viene de Templates, es la capa de la interfaz para los usuarios, principalmente páginas web.
+
+ V, Viene de Views, los conocidos views de Django. Estos views son funciones escritas en el lenguaje Python donde se puede decir que es un puente entre los templates y la capa de model. En la capa de views se puede procesar datos de la BD y decidir qué acciones tomar que puedan apreciarse en los templates.
+
+ Este patrón de diseño es bastante parecido al MVC, el conocido Modelo Vista-Controlador utilizado por bastantes frameworks como Ruby on Rails, solo que se especifica a su manera ya que puede traer confusiones gracias a que en el MCV la capa de las Vistas se refiere a lo que en el MTV son los Templates, mientras que en el MTV de Django Views es en verdad funciones, donde en el MVC están en la capa de Controlador.
