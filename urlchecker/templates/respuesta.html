@@ -2,9 +2,12 @@
 
 {% block contenido%}
     {% if cargo %}
-        <p>La página funciona correctamente</p>
+        <p>Webpage is working!</p>
     {% else%}
-        <p>La página lamentablemente no funciona :(</p>
+        <p>Yeah, that webpage is down :(</p>
     {% endif %}
+{% endblock %}
 
+{% block onfooter%} 
+    <a href="/../{{ parent.id }}" class="btn btn-primary btn-lg">Go back! &raquo; </a>
 {% endblock %}

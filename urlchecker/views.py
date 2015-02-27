@@ -10,10 +10,16 @@ from urllib.parse import urlparse
 
 
 def index(request):
-    # View code here...
+    #Redireccion a main
     t = loader.get_template('index.html')
+    c = Context({'foo': 'bar'})         
+    return HttpResponse(t.render(c))
+
+def dev(resquest):
+    t = loader.get_template('dev.html')
     c = Context({'foo': 'bar'})
     return HttpResponse(t.render(c))
+
 
 def isitworking(url):
     # Returns true on successfull ping

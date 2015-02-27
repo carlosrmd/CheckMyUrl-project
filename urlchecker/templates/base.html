@@ -39,6 +39,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand">Welcome</a>
+          <a class="navbar-brand" href="developers">Developers</a>
         </div>
         
       </div>
@@ -55,11 +56,8 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
-          <h2>How to use</h2>
-          <p>Copy some URL and check if it is down for everyone or just for you. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
+        {% block onfooter %} {% endblock %}
+        
       </div>
 
       <hr>
