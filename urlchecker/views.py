@@ -31,8 +31,6 @@ def checking(request):
     # if this is a POST request we need to process the form data
     if request.method == 'GET':
         url = request.GET['your_url']
-        
-        print(url)
 
         return render(request, 'respuesta.html',{'cargo':isitworking(url)})
     else:
