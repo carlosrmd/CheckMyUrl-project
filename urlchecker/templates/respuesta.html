@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+
+{% block contenido%}
+    {% if cargo %}
+        <p>La página funciona correctamente</p>
+    {% else%}
+        <p>La página lamentablemente no funciona :(</p>
+    {% endif %}
+
+{% endblock %}

@@ -48,13 +48,7 @@
     <div class="jumbotron">
       <div class="container">
         {% block contenido%} {% endblock %}
-        <form action="/checkit/" method="GET">
-        {% csrf_token %}
-        <div class="form-group">
-          <input type="url" name="your_url" size="20" class="form-control" placeholder="Enter your url here...">
-        </div>
-        <p><input type="submit" value="Check! &raquo;" class="btn btn-primary btn-lg"></p>
-        </form>
+        
       </div>
     </div>
 

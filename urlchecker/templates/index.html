@@ -2,8 +2,11 @@
 
 {% block contenido%}
 <h1> Check my url! </h1>
-<div class="form-group">
-  <input type="url" name="fname" size="20" class="form-control" placeholder="Enter your url here...">
-</div>
-<p><a class="btn btn-primary btn-lg" href="#" role="button">Check! &raquo;</a></p>
+    <form action="/checkit/" method="GET">
+    {% csrf_token %}
+        <div class="form-group">
+          <input type="url" name="your_url" size="20" class="form-control" placeholder="Enter your url here...">
+        </div>
+    <p><input type="submit" value="Check! &raquo;" class="btn btn-primary btn-lg"></p>
+</form>
 {% endblock %}
