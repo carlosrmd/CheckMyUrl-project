@@ -1,4 +1,4 @@
-<p>PIP y Bundler son administradores o gestores de paquetes para Python y Ruby (usando gems). Estos gestores permiten desarrollar y distribuir aplicaciones, asegurando que las dependencias esten instaladas en la versión correcta. </p>
+PIP y Bundler son administradores o gestores de paquetes para Python y Ruby (usando gems). Estos gestores permiten desarrollar y distribuir aplicaciones, asegurando que las dependencias esten instaladas en la versión correcta.
 
 Un requirement file es un archivo de configuración para pip, este archivo permite indicar las dependencias y versiones que serán usadas en el entorno deseado.
 De forma análoga funcionan los gemfiles, en donde se indica una página web fuente de gems,y los paquetes a ser instalados.
