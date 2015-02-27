@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+
+
+{% block contenido %}
+    
+{% for contenido in archivo %}
+    <p>{{contenido}}<p>
+{% endfor %}
+
+{% endblock%}

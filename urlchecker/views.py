@@ -20,6 +20,27 @@ def dev(resquest):
     c = Context({'foo': 'bar'})
     return HttpResponse(t.render(c))
 
+def about(resquest):
+    t = loader.get_template('about.html')
+
+    path = os.path.dirname(os.path.abspath(__file__))
+    path = path + "/static/resp/"
+    
+    os.chdir(path)
+
+    i=0
+    contenidos = []
+
+    for archivo in os.listdir("."):
+
+        with open(path + archivo,"r") as respuesta:
+            contenidos.append(respuesta.read().replace('\n',''))
+
+
+    c = Context({'archivo': contenidos })
+    return HttpResponse(t.render(c))
+
+
 
 def isitworking(url):
     # Returns true on successfull ping
