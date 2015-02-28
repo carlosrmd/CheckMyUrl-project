@@ -32,9 +32,13 @@ def about(resquest):
     contenidos = []
 
     for archivo in os.listdir("."):
+        for line in open(archivo):
+            string = line.rstrip() 
+            print(string)
+            contenidos.append(string)
 
-        with open(path + archivo,"r") as respuesta:
-            contenidos.append(respuesta.read().replace('\n',''))
+        contenidos.append("-")
+
 
 
     c = Context({'archivo': contenidos })
