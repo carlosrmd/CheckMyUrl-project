@@ -1,19 +1,7 @@
-virtualenv es un gestionador de entorno de desarrollo para Python, permite
-administrar un ambiente para cada que una aplicacion pueda funcionar
-correctamente, esto resuelve los posibles conflictos que acarrea la
-actualizacion de las bibliotecas, permitiendo al usuario decidir de forma
-explicita que cambios en su entorno desea aceptar, modificar o desechar. 
+virtualenv es un gestionador de entorno de desarrollo para Python, permite administrar un ambiente para cada que una aplicación pueda funcionar correctamente, esto resuelve los posibles conflictos que acarrea la actualización de las bibliotecas, permitiendo al usuario decidir de forma explícita qué cambios en su entorno desea aceptar, modificar o desechar. 
 
-Adicionalmente, esta herramienta ayuda a depurar una aplicación bajo los
-diferentes entornos que podría tener un usuario final sin necesidad de instalar
-y remover constantemente las diferentes bibliotecas instaladas en el sistema
-actual.
+Adicionalmente, esta herramienta ayuda a depurar una aplicación bajo los diferentes entornos que podría tener un usuario final sin necesidad de instalar y remover constantemente las diferentes bibliotecas instaladas en el sistema actual.
+ 
+RVM es una herramienta similiar dirigida al lenguaje Ruby. En este lenguaje de programación se hace uso de "gems" que son paquetes de aplicaciones o bibliotecas para extender o modificar funcionalidades de los scripts interpretados. 
 
-RVM es una herramienta similiar dirigido al lenguaje Ruby. En este lenguaje de
-programación se hace uso de "gems" que son paquetes de aplicaciones o
-bibliotecas para extender o modificar funcionalidades de los scripts
-interpretados.
-
-Un problema adicional resuelto en RVM es la optimizacion de los entornos, RVM
-mantiene un uso mínimo de gems, minimizando las dependencias mutuas entre
-ellas para que el programador tenga solamente lo necesario para su aplicacion.
+Un problema adicional resuelto en RVM es la optimización de los entornos, RVM mantiene un uso mínimo de gems, minimizando las dependencias mutuas entre ellas para que el programador tenga solamente lo necesario para su aplicación.
