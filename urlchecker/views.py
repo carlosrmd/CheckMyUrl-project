@@ -15,12 +15,12 @@ def index(request):
     c = Context({'foo': 'bar'})         
     return HttpResponse(t.render(c))
 
-def dev(resquest):
+def dev(request):
     t = loader.get_template('dev.html')
     c = Context({'foo': 'bar'})
     return HttpResponse(t.render(c))
 
-def about(resquest):
+def about(request):
     t = loader.get_template('about.html')
 
     path = os.path.dirname(os.path.abspath(__file__))
@@ -56,7 +56,7 @@ def checking(request):
     # if this is a POST request we need to process the form data
     if request.method == 'GET':
         url = request.GET['your_url']
-
+        if url == "": return render(request, 'index.html')
         return render(request, 'respuesta.html',{'cargo':isitworking(url)})
     else:
         form = UrlForm()
